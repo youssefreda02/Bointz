@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yo2f.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/bointz_ic"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bointz"
+        tools:replace="android:icon,android:theme">
+        <activity android:name="com.yo2f.myapplication.UpdatePasswordActivity" />
+        <activity android:name="com.yo2f.myapplication.SettingActivity" />
+        <activity android:name="com.yo2f.myapplication.AboutActivity" />
+        <activity android:name="com.yo2f.myapplication.SpinningActivity" />
+        <activity android:name="com.yo2f.myapplication.RegisterActivity" />
+        <activity android:name="com.yo2f.myapplication.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yo2f.myapplication.CheckOutActivity" />
+        <activity android:name="com.yo2f.myapplication.LoginActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+    </application>
+
+</manifest>

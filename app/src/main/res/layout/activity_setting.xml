@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yo2f.myapplication.SettingActivity"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_man"
+        android:id="@+id/iv_profile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_profile"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:drawableLeft="@drawable/user_icon_foreground"
+                android:id="@+id/profile_et_name"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/email"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/email"
+                android:textSize="20sp"
+                android:drawableLeft="@mipmap/email_ic_foreground"
+                android:id="@+id/profile_et_email"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/phone"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/phone_number"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/mob_icon_foreground"
+                android:id="@+id/profile_et_phone"
+                android:inputType="phone"
+                android:layout_gravity="center_horizontal" />
+
+
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_marginTop="20dp"
+                android:onClick="save"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_save"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="20dp"
+                />
+            <TextView
+                android:id="@+id/sign_up_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/dashed_underline"
+                android:text="@string/change_password"
+                android:textColor="#2175F3"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
